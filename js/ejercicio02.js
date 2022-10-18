@@ -20,7 +20,7 @@ function mostrar(){
 }
 
 function muestraOculta2() {
-    
+    console.log();
     document.getElementById("contenidos_2").style.display = "none";
     e2.innerHTML="Volver a mostrar codigo"
     e2.removeEventListener("click", muestraOculta2, false);
