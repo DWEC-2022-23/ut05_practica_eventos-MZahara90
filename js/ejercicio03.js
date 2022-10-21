@@ -13,7 +13,7 @@ function overposition(e) {
 function position(e) {
   pantalla.innerText = "Navegacion = X: " + e.screenX + " Y: " + e.screenY;
   pag.innerText = "Pagina = X: " + e.pageX + " Y: " + e.pageY;
-  document.getElementById("objeto").innerHTML = "RATON"
+  document.getElementById("objeto").innerHTML = "RATON "
 }
 function clear(){
     document.getElementById("Cli").innerHTML = ""
