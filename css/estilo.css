@@ -3,8 +3,7 @@ body {
     
 
 }
-#info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
-#info h1 {margin: 0;}
+
 
 a {
     font-weight: 700;
@@ -16,4 +15,30 @@ h4 {
     margin: 0;
     padding: 0;
     color:cadetblue
+}
+
+#info{
+    border: 2px solid;
+    width: 20vw;
+    height: 12vw;;
+}
+#contenedor{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:14vw;
+    height: 25vw;
+}
+#texto{
+    border: 2px solid;
+    width:20vw;
+    height: 5vw;
+    font-size: medium;
+}
+#info p{
+    margin:2px;
+}
+#info h1{
+    margin:2px;
 }
