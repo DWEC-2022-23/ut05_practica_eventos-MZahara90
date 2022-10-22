@@ -1,6 +1,5 @@
 body {
     font-family: arial, helvetica;
-    
 
 }
 
@@ -18,27 +17,29 @@ h4 {
 }
 
 #info{
-    border: 2px solid;
-    width: 20vw;
+    border: 3px solid;
+    width: 100%;
     height: 12vw;;
 }
 #contenedor{
+
     
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width:14vw;
-    height: 25vw;
+    width: 20%;
+    height: 1%;
 }
 #texto{
-    border: 2px solid;
-    width:20vw;
+    border: 3px solid;
+    display:flex;
+    width:100%;
     height: 5vw;
     font-size: medium;
 }
 #info p{
-    margin:2px;
+    margin:1px;
 }
 #info h1{
-    margin:2px;
+    margin:1px;
 }
