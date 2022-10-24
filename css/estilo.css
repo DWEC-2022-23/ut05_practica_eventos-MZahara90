@@ -43,3 +43,27 @@ h4 {
 #info h1{
     margin:1px;
 }
+
+#numero{
+    font-size: 2vw;;
+    display:flex;
+    width:20vw;
+    height: 5vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#numdiv{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width:15vw;
+    height: 12vw;
+    border: 2px solid;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+
+}

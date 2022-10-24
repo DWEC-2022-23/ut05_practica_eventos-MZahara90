@@ -1,13 +1,15 @@
 
-const numero = document.getElementById("numero");
+const numero = document.getElementById("numdiv");
+
 
 numero.addEventListener("dblclick", multiplicar, false);
 numero.addEventListener("mouseover", cambiar, false);
 numero.addEventListener("mouseout", volver, false);
 
 function multiplicar(){
+
    var num= parseInt(numero.textContent);
-    numero.innerHTML=  num*3;
+    numero.innerText=  num*3;
 }
 
 function cambiar(){
