@@ -1,6 +1,7 @@
-let pantalla = document.getElementById("Nav");
+let navegador = document.getElementById("Nav");
 let pag = document.getElementById("Pag");
 let cliente = document.getElementById("Cli");
+let pantalla = document.getElementById("Pan");
 document.addEventListener('mousemove', position);
 let info=document.getElementById("info");
 info.addEventListener('mousemove', overposition);
@@ -16,8 +17,9 @@ function overposition(e) {
 function position(e) {
   info.style.backgroundColor = "white";
   texto.innerHTML ="Se ha movido el raton";
-  pantalla.innerText = "Navegacion = X: " + e.screenX + " Y: " + e.screenY;
+  navegador.innerText = "Navegador = X: " + (e.pageX + (window.outerWidth-window.innerWidth))  + " Y: " + (e.pageY + (window.outerHeight -window.innerHeight));
   pag.innerText = "Pagina = X: " + e.pageX + " Y: " + e.pageY;
+  pantalla.innerText = "Pantalla = X: " + e.screenX + " Y: " + e.screenY;
   document.getElementById("objeto").innerHTML = "RATON "
 }
 function clear(){
@@ -28,8 +30,9 @@ function clear(){
 function colorClick(e) {
   info.style.backgroundColor = "#FFFFCC";
   texto.innerHTML ="Se hace click con el raton";
-  pantalla.innerText = "Navegacion = X: " + e.screenX + " Y: " + e.screenY;
+  navegador.innerText = "Navegador = X: " + (e.pageX + document.documentElement.scrollLeft) + " Y: " + (e.pageY + document.documentElement.scrollTop );
   pag.innerText = "Pagina = X: " + e.pageX + " Y: " + e.pageY;
+  pantalla.innerText = "Pantalla = X: " + e.screenX + " Y: " + e.screenY;
   document.getElementById("objeto").innerHTML = "RATON "
 }
 
@@ -38,8 +41,8 @@ function colorKey(event) {
   info.style.backgroundColor = "#CCE6FF";
   texto.innerHTML ="Se pulsa una tecla";
   document.getElementById("objeto").innerHTML = "TECLADO";
-  pantalla.innerText = "Caracter: [" + event.key + "]";
+  navegador.innerText = "Caracter: [" + event.key + "]";
   pag.innerText = "Caracter: [" + e.charCode + "]";
   cliente.innerText = " ";
-
+  pantalla.innerText = " ";
 }
