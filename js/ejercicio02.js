@@ -14,7 +14,7 @@ function muestraOculta() {
 }
 function mostrar(){
     document.getElementById("contenidos_1").style.display = "inline";
-    e1.innerHTML="<br/>Ocultar contenidos"
+    e1.innerHTML="<br/><br/>Ocultar contenidos<br/>"
     e1.removeEventListener("click", mostrar, false);
     e1.addEventListener("click",muestraOculta,false);
 }
@@ -27,7 +27,7 @@ function muestraOculta2() {
 }
 function mostrar2(){
     document.getElementById("contenidos_2").style.display = "inline";
-    e2.innerHTML="<br/>Ocultar contenidos"
+    e2.innerHTML="<br/><br/>Ocultar contenidos<br/>"
     e2.removeEventListener("click", mostrar2, false);
     e2.addEventListener("click",muestraOculta2,false);
 }
@@ -41,7 +41,7 @@ function muestraOculta3() {
 }
 function mostrar3(){
     document.getElementById("contenidos_3").style.display = "inline";
-    e3.innerHTML="<br/>Ocultar contenidos"
+    e3.innerHTML="<br/><br/>Ocultar contenidos<br/>"
     e3.removeEventListener("click", mostrar3, false);
     e3.addEventListener("click",muestraOculta3,false);
 }

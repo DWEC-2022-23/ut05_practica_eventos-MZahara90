@@ -1,4 +1,5 @@
 let navegador = document.getElementById("Nav");
+let explicaciones = document.getElementById("explicaciones");
 let pag = document.getElementById("Pag");
 let cliente = document.getElementById("Cli");
 let pantalla = document.getElementById("Pan");
@@ -12,15 +13,16 @@ document.addEventListener('click',colorClick);
 document.addEventListener('keypress',colorKey);
 
 function overposition(e) {
-    cliente.innerText = "Cliente = X: " + (e.clientX -8) + " Y: " + (e.clientY -8);
+    cliente.innerText = "Cliente = [X: " + (e.clientX -769) + ", Y: " + (e.clientY -8) + "]";
   }
 function position(e) {
   info.style.backgroundColor = "white";
   texto.innerHTML ="Se ha movido el raton";
-  navegador.innerText = "Navegador = X: " + (e.pageX + (window.outerWidth-window.innerWidth))  + " Y: " + (e.pageY + (window.outerHeight -window.innerHeight));
-  pag.innerText = "Pagina = X: " + e.pageX + " Y: " + e.pageY;
-  pantalla.innerText = "Pantalla = X: " + e.screenX + " Y: " + e.screenY;
+  navegador.innerText = "Navegador = [X: " + (e.pageX + (window.outerWidth-window.innerWidth))  + ", Y: " + (e.pageY + (window.outerHeight -window.innerHeight)) + "]";
+  pag.innerText = "Pagina = [X: " + e.pageX + ", Y: " + e.pageY + "]";
+  pantalla.innerText = "Pantalla = [X: " + e.screenX + ", Y: " + e.screenY + "]";
   document.getElementById("objeto").innerHTML = "RATON "
+  explicaciones.style.display = "inline"
 }
 function clear(){
     document.getElementById("Cli").innerHTML = ""
@@ -30,10 +32,11 @@ function clear(){
 function colorClick(e) {
   info.style.backgroundColor = "#FFFFCC";
   texto.innerHTML ="Se hace click con el raton";
-  navegador.innerText = "Navegador = X: " + (e.pageX + document.documentElement.scrollLeft) + " Y: " + (e.pageY + document.documentElement.scrollTop );
-  pag.innerText = "Pagina = X: " + e.pageX + " Y: " + e.pageY;
-  pantalla.innerText = "Pantalla = X: " + e.screenX + " Y: " + e.screenY;
+  navegador.innerText = "Navegador = [X: " + (e.pageX + (window.outerWidth-window.innerWidth))  + ", Y: " + (e.pageY + (window.outerHeight -window.innerHeight)) + "]";
+  pag.innerText = "Pagina = [X: " + e.pageX + ", Y: " + e.pageY + "]";
+  pantalla.innerText = "Pantalla = [X: " + e.screenX + ", Y: " + e.screenY + "]";
   document.getElementById("objeto").innerHTML = "RATON "
+  explicaciones.style.display = "inline"
 }
 
 function colorKey(event) {
@@ -45,4 +48,5 @@ function colorKey(event) {
   pag.innerText = "Caracter: [" + e.charCode + "]";
   cliente.innerText = " ";
   pantalla.innerText = " ";
+  explicaciones.style.display = "none";
 }
