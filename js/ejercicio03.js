@@ -1,4 +1,5 @@
 let navegador = document.getElementById("Nav");
+let contenedor = document.getElementById("contenedor");
 let explicaciones = document.getElementById("explicaciones");
 let pag = document.getElementById("Pag");
 let cliente = document.getElementById("Cli");
@@ -13,7 +14,8 @@ document.addEventListener('click',colorClick);
 document.addEventListener('keypress',colorKey);
 
 function overposition(e) {
-    cliente.innerText = "Cliente = [X: " + (e.clientX -769) + ", Y: " + (e.clientY -8) + "]";
+  var rect = info.getBoundingClientRect();
+    cliente.innerText = "Cliente = [X: " + (e.clientX - rect.left) + ", Y: " + (e.clientY - rect.top) + "]";
   }
 function position(e) {
   info.style.backgroundColor = "white";
