@@ -6,17 +6,29 @@
 <link rel="stylesheet" href="css/estilo.css"></style>
 </head>
 <body>
+  <h4>Ejercicio 01</h4>
+    <p>Realiza una página web que muestre un número dentro de un div y responda a los siguientes eventos de la
+        siguiente manera:
+        Cuando haga doble click, calculará el triple del número
+        Cuando pase el ratón por encima cambiará de color (fondo y fuente) y cuando salga volverá a su color
+        original.
+    </p>
 <form action="">
   <label for="num">Numero a colocar: </label>
-  <input id="number" type="text" name="num">
+  <input id="inputNumber" type="number" name="num">
   <input type="button" id="boton" value="Colocar">
 </form>
-<div id = "numdiv">
-    <div id="numero">
-    <p id="p">5</p>
-    </div>
+<div id="caja">
+  <div id = "numdiv">
+      <div id="numero">
+      <p id="textNum">5</p>
+      </div>
+  </div>
 </div>
-<p> <a href="index.html">Volver al Index</a></p>
+
+<button onclick="location.href='index.html'" type="button">
+ Volver al Índice</button>
+
 <script type="" src="js/ejercicio01.js"></script>
 </body>
 </html>
