@@ -34,7 +34,7 @@ function clear(){
 
 
 function colorClick(e) {
-  info.style.backgroundColor = "#E3FA4D";
+  info.style.backgroundColor = "#FFFFCC";
   texto.innerHTML ="Se ha hecho click con el raton";
   navegador.innerText = "Navegador = [X: " + (e.pageX + (window.outerWidth-window.innerWidth))  + ", Y: " + (e.pageY + (window.outerHeight -window.innerHeight)) + "]";
   pag.innerText = "Pagina = [X: " + e.pageX + ", Y: " + e.pageY + "]";
