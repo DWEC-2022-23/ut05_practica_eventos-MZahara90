@@ -17,7 +17,7 @@ document.addEventListener('keypress',colorKey);
 
 function overposition(e) {
   var rect = info.getBoundingClientRect();
-    cliente.innerText = "Cliente = [X: " + (e.clientX - rect.left) + ", Y: " + (e.clientY - rect.top +0.5) + "]";
+    cliente.innerText = "Cliente = [X: " + (e.clientX - rect.left) + ", Y: " + (e.clientY - rect.top) + "]";
   }
 function position(e) {
   info.style.backgroundColor = "white";

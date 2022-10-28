@@ -30,12 +30,11 @@ p{
     display: flex;
     flex-wrap: wrap;
     border: 1px solid;
-    border-radius: 8px;
     width: 500px;
     height: 300px;
     justify-content: center;
     text-align: center;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 #contenedor{
     display: flex;
@@ -55,10 +54,10 @@ p{
     text-align: center;
 }
 #info p{
-    margin:1px;
+    margin:2px;
 }
 #info h1{
-    margin:15px;
+    margin:16px;
 }
 
 #numero{
