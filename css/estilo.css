@@ -1,10 +1,15 @@
 body {
+   
     font-family: arial, helvetica;
-    
 
 }
-#info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
-#info h1 {margin: 0;}
+
+#body3{
+    display:flex;
+    align-items:  center;
+    flex-direction: column;
+    
+}
 
 a {
     font-weight: 700;
@@ -16,4 +21,103 @@ h4 {
     margin: 0;
     padding: 0;
     color:cadetblue
+}
+p{
+    width: 100%;
+}
+
+#info{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4px;
+}
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 400px;
+}
+#texto{
+    border: 1px solid;
+    border-radius: 8px;
+    display:flex;
+    width: 500px;
+    height: 50px;
+    font-size: medium;
+    text-align: center;
+}
+#info p{
+    margin:2px;
+}
+#info h1{
+    margin:16px;
+}
+
+#numero{
+    font-size: 2vw;
+    display:flex;
+    width:20vw;
+    height: 5vw;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#caja{
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+}
+#numdiv{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 300px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 12px;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+
+}
+#numero{
+    display: flex;
+}
+
+button{
+    background-color: #65aa8f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 2vw;
+  
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+#boton{
+    background-color: #65aa8f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 12px;
+    font-weight: bold;
 }
